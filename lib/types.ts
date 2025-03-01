@@ -14,9 +14,17 @@ export interface Hospital {
 
 export interface Patient {
   id: string
+  uid: string
   name: string
-  location: string
-  emergencyContact: string
-  medicalInfo: string[]
+  email: string
+  phoneNumber: string
+  dob: string
+  gender: string
+  bloodType: string
+  height: string
+  weight: string
+  isActive: boolean
+  chronicDiseases: string
+  familyHistoryOfChronicDiseases: string
+  date: string
 }
-

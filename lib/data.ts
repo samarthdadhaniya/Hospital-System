@@ -1,7 +1,7 @@
 import type { Doctor, Hospital, Patient } from "./types"
 
 // Mock data for patients (simulating Firebase data)
-const mockPatients: Patient[] = [
+const mockPatients = [
   {
     id: "P001",
     name: "John Doe",
@@ -137,7 +137,7 @@ export function saveHospitals(hospitals: Hospital[]): void {
 }
 
 // Function to get patients (simulating Firebase fetch)
-export function getPatients(): Patient[] {
+export function getPatients(){
   // In a real app, this would be a Firebase fetch
   return mockPatients
 }
